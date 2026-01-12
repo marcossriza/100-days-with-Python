@@ -129,3 +129,58 @@ del my_old_classmate[0]
 del my_old_classmate[0]
 
 print(f'Guest to invite remaining: {my_old_classmate}')
+
+
+
+cars = ['bmw', 'audi', 'ford', 'DYG']
+#length of the list
+print(len(cars))
+
+
+
+#3-8 try it yourself
+dream_places = ['Japan', 'South Korea', 'Dubai', 'Canada', 'Vietnam']
+print(f'Original List: {dream_places}')
+
+#make it alpahebetical order
+
+#sort the order but dont change the original order
+sorted_place = sorted(dream_places)
+print(sorted_place)
+#still on its original list
+print(dream_places)
+
+#reverse alphabetical order
+reverse_sorted_place = sorted(dream_places, reverse=True)
+print(reverse_sorted_place)
+
+print(f'Original List Copy: {dream_places}')
+
+
+#reverse the original list
+dream_places.reverse()
+print(dream_places)
+
+#reverse back to its original list
+dream_places.reverse()
+print(dream_places)
+
+#permanently change into alphabetical order the list
+dream_places.sort()
+print(dream_places)
+#reverse permanently the order 
+dream_places.sort(reverse=True)
+print(dream_places)
+
+
+#3-9 Dinner Guest (TRY IT YOURSELF)
+#count the length of the previous exercise
+print(len(my_old_classmate))
+
+
+#3-10 Every Function (TRY IT YOURSELF)
+#i skipped
+
+
+
+
