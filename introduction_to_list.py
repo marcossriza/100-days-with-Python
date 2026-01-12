@@ -137,7 +137,7 @@ print(f'Guest to invite remaining: {my_old_classmate}')
 
 
 
-<<<<<<<< HEAD:introduction_to_list.py
+
 cars = ['bmw', 'audi', 'ford', 'DYG']
 #length of the list
 print(len(cars))
@@ -186,9 +186,4 @@ print(len(my_old_classmate))
 
 #3-10 Every Function (TRY IT YOURSELF)
 #i skipped
-
-
-
-========
->>>>>>>> 57c8dc022e9a1af38491e69fba47df7da8ad9d2e:combin.py
 

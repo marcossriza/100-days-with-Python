@@ -24,3 +24,26 @@ print(f'Thank you to all of our magicians for your performances')
 
 #python produce an "IndentationError" if it expects an indentation
 
+
+#the colon on for loop ":" means the next line is the start of the loop
+
+
+magicians = ['alice', 'david', 'carolino']
+for magician in magicians:
+    print(magician)
+
+
+
+
+#range() funcation. 
+#print the number range like 1,2,3... like its counting. the first num is the starting and the second parameter is what number to stop. it stop before 100 so the result is until 99
+#if you only add a 1 parameter it will automatically start to 0. et al. range(80)
+for value in range(1,10):
+    print(value)
+
+#store in a list output [1,2,3,4,5..]. rather than printing one line per number
+numbers = list(range(1, 9))
+print(numbers)
+
+
+
