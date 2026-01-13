@@ -113,3 +113,91 @@ for cube in cubes_expo:
 
 cube_wListComprehension = [cube_expo_compre**3 for cube_expo_compre in range(1,11)]
 print(cube_wListComprehension)
+
+
+#slice
+
+players = ['anna', 'charlotte', 'angel', 'ellaine', 'riza']
+#variable, bracket what index to start and what before number to stop. it retains all the item. this just fetch according what we slice. [3:] if you ommit the first parameter it automatically starts with the first item and vise versa et al. [1:], [-3:]
+print(players[1:5])
+
+
+#use the slicer on for loop. called the last item on the list
+print('The last to finish the lane are: ')
+for player in players[-3:]:
+   print(player.upper())
+
+
+
+#COPY THE LIST BY [:]
+my_food = ['pizza', 'cake', 'pichi-pichi']
+bfs_food = my_food[:]
+
+print(f'This my fave food {my_food} and this is my bfs fave food, {bfs_food}')
+
+#we added a new item on a separate list. this added separated even the second variable just copied the original list of the first var
+my_food.append('matcha')
+bfs_food.append('ice cream')
+
+print('My updated fave food:')
+print(my_food)
+
+print('My bf updated food:')
+print(bfs_food)
+
+
+#if we want the variable to have a same item even if we append. but this is mostly unlikely to happen. slicing is better for other scenario
+fave_color = ['red', 'violet', 'brown']
+bfs_color = fave_color
+
+fave_color.append('matcha')
+bfs_color.append('black')
+
+print('New set of my fave color')
+print(fave_color)
+
+print('New set of my bfs fave color:')
+print(bfs_color)
+
+
+#TRY IT YOURSELF
+#4-10 SLICES 
+
+print('The first three items in the list are:')
+#print the first three items from the players list
+print(players[0:2])
+#print the three items from the middle of the list
+print(players[:2])
+#prin the last three items in the list
+print(players[:-3])
+
+
+#4-11 MY PIZZAS, YOUR PIZZAS
+
+#copied the list of var magicians
+batch2_magicians = magicians[:]
+
+#added a new item on the original magicians
+magicians.append('Arisu')
+#added additional magicians to the batch 2
+batch2_magicians.append('Ame')
+
+for magician in magicians:
+   print(f'The original cast for the magicians are: {magician.title()}')
+
+for batch2_magician in batch2_magicians:
+    print(f'Let me introduce the cast for the season 2 of the magicians: {batch2_magician.title()}')
+
+
+
+#better syntax, same as above
+print('-------------\n \n')
+print('The original cast for the magicians are:')
+for magician in magicians:
+    print(magician.title())
+
+
+print('Let me introduce the cast for the season 2 of the magicians:')
+for batch2_magician in batch2_magicians:
+    print(batch2_magician.title())
+
